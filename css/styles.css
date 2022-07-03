@@ -6,25 +6,84 @@
   белый цвет текста контакты FFFFFF 60%
   фон подвал, фон герой - 2F303A
   фон неактивные фильтры - F5F4FA
+  Лого шрифт Raleway bold 26
+  Roboto Medium 14 - навигация и контакты
+  Roboto Balck 44
+  фон футтер, фон герой 2F303A
+  фон наша команда F5F4FA
+  фон белый FFFFFF
+  фон белый E5E5E5
+  убрать точки в списке гдобально
+  ul {
+  list-style: none;
+}заголовки секций шрифт цвет - 212121
   */
 
-/*:root {
-  --primary-text-color: #2196f3
+:root {
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-}*/
-
-.logo:hover {
-  color: #000000;
+  --primary-text-color: #757575;
+  --logo-text-color: #000000;
+  --secondary-bg-color: #2f303a;
 }
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+}
+/* List without dots design*/
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Logo color header*/
+.logo {
+  color: var(--logo-text-color);
+}
+
 .accent {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+/* Logo color footer*/
+.logo.footer {
+  color: var(--primary-white-color);
+}
+/*nav font color*/
+.nav-link {
+  color: var(--title-text-color);
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
-.nav-link-active:hover {
-  color: #2196f3;
+.nav-link-active {
+  color: var(--accent-color);
+}
+/*h2 section font color*/
+.section-title {
+  color: var(--title-text-color);
+}
+.hero {
+  background: var(--secondary-bg-color);
+}
+/*Hero font color*/
+.hero-title {
+  color: var(--primary-white-color);
+}
+.feature-list .title {
+  color: var(--title-text-color);
+}
+.team-list .title {
+  color: var(--title-text-color);
+}
+.button.primary {
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  border-color: transparent;
+}
+.footer {
+  background-color: var(--secondary-bg-color);
 }
