@@ -6,9 +6,8 @@
   белый цвет текста контакты FFFFFF 60%
   фон подвал, фон герой - 2F303A
   фон неактивные фильтры - F5F4FA
-  Лого шрифт Raleway bold 26
-  Roboto Medium 14 - навигация и контакты
-  Roboto Balck 44
+  Лого шрифт Raleway 700
+  Roboto- 400, 500, 700, 900
   фон футтер, фон герой 2F303A
   фон наша команда F5F4FA
   фон белый FFFFFF
@@ -61,6 +60,15 @@ a {
 }
 .nav-link-active {
   color: var(--accent-color);
+}
+/*contact information font color*/
+.contact-list .link {
+  color: var(--primary-text-color);
+}
+.contact-list .link:hover,
+.contact-list .link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 /*h2 section font color*/
 .section-title {
