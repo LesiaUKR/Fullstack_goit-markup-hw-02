@@ -30,6 +30,7 @@
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
+  font-family: Roboto, monospace;
 }
 /* List without dots design*/
 ul {
@@ -38,21 +39,25 @@ ul {
 a {
   text-decoration: none;
 }
-/* Logo color header*/
+/*WebStudio Logo header*/
 .logo {
   color: var(--logo-text-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
-
 .accent {
   color: var(--accent-color);
 }
-/* Logo color footer*/
-.logo.footer {
-  color: var(--primary-white-color);
-}
+
 /*nav font color*/
 .nav-link {
   color: var(--title-text-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -60,10 +65,19 @@ a {
 }
 .nav-link-active {
   color: var(--accent-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 /*contact information font color*/
 .contact-list .link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .contact-list .link:hover,
 .contact-list .link:focus {
@@ -73,25 +87,74 @@ a {
 /*h2 section font color*/
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
 }
+
 .hero {
   background: var(--secondary-bg-color);
 }
 /*Hero font color*/
 .hero-title {
   color: var(--primary-white-color);
-}
-.feature-list .title {
-  color: var(--title-text-color);
-}
-.team-list .title {
-  color: var(--title-text-color);
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .button.primary {
   color: var(--primary-white-color);
   background: var(--accent-color);
   border-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
+/*Особенности*/
+.feature-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/*Наша команда*/
+.team-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.card-description {
+  font-size: 16px;
+  line-height: 1.19;
+}
+/*Подвал*/
 .footer {
   background-color: var(--secondary-bg-color);
+}
+.footer .text {
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+/*WebStudio Logo footer*/
+.footer .logo {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+/*contacts footer*/
+.footer .link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
 }
