@@ -25,12 +25,15 @@
   --primary-text-color: #757575;
   --logo-text-color: #000000;
   --secondary-bg-color: #2f303a;
+  --button-accent-color: #188ce8;
+  --third-bg-color: #f5f4fa;
 }
 
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
   font-family: Roboto, monospace;
+  letter-spacing: 0.03em;
 }
 /* List without dots design*/
 ul {
@@ -48,12 +51,14 @@ a {
 }
 .accent {
   color: var(--accent-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 /*nav font color*/
 .nav-link {
   color: var(--title-text-color);
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -65,7 +70,6 @@ a {
 }
 .nav-link-active {
   color: var(--accent-color);
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -90,6 +94,7 @@ a {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 }
 
 .hero {
@@ -103,7 +108,8 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.button.primary {
+.button-primary {
+  font-family: inherit;
   color: var(--primary-white-color);
   background: var(--accent-color);
   border-color: transparent;
@@ -111,6 +117,12 @@ a {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-primary:focus,
+.button-primary:hover {
+  background: var(--button-accent-color);
 }
 /*Особенности*/
 .feature-list .title {
@@ -125,15 +137,20 @@ a {
   line-height: 1.71;
 }
 /*Наша команда*/
+.section-team {
+  background: var(--third-bg-color);
+}
 .team-list .title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
-.card-description {
+.team-list .card-description {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 /*Подвал*/
 .footer {
@@ -157,4 +174,39 @@ a {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--primary-white-color);
+}
+/*Фильтры Портфолио Наши работы*/
+.button-list .button {
+  color: var(--title-text-color);
+  background-color: var(--third-bg-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-list .button:hover,
+.button-list .button:focus {
+  background: var(--button-accent-color);
+  color: var(--primary-white-color);
+  border-color: transparent;
+}
+.portfolio .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio .card-description {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
 }
