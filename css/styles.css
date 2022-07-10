@@ -44,12 +44,14 @@ a {
 }
 /*WebStudio Logo header*/
 .logo {
+  font-family: Raleway, sans-serif;
   color: var(--logo-text-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
 .accent {
+  font-family: Raleway, sans-serif;
   color: var(--accent-color);
   font-weight: 700;
   font-size: 26px;
@@ -164,6 +166,7 @@ a {
 }
 /*WebStudio Logo footer*/
 .footer .logo {
+  font-family: Raleway, sans-serif;
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 26px;
